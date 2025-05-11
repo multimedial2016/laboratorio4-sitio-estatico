@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --first-font: "Montserrat", sans-serif;
+  --teal: #20c997;
+  --teal-opacity: #20c9961c;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --light-opacity: #f8f9fa2c;
+  --dark: #343a40;
+  --dark-opacity: #000000d5;
+  --instagram-color: hsl(335 100% 50%);
+  --youtube-color: hsl(0 100% 50%);
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  font-family: var(--first-font);
+}
+body {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main {
+  width: 100%;
+  background-color: var(--dark-opacity);
+}
+.content-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+}
+.content-bio h1 {
+  margin: 20px 0;
+  padding: 0 20px;
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  color: var(--light);
+}
+.content-bio p {
+  margin: 20px 0;
+  padding: 0 20px;
+  text-align: justify;
+  line-height: 22px;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  color: var(--light);
+}
+.img-perfil {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 10px solid var(--teal);
+  box-shadow: 2px 10px 10px var(--teal-opacity);
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+}
+.content-social {
+  margin: 20px 0;
+  padding: 20px 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 2px solid var(--teal);
+  background-color: var(--teal-opacity);
+}
+.link-social i {
+  animation: pulse 1s infinite;
+  -webkit-animation: pulse 1s infinite;
+}
+.link-social i:hover {
+  animation-play-state: paused;
+}
+.fa-youtube {
+  color: var(--youtube-color);
+  font-size: 3rem;
+  margin: 0 10px;
+}
+.fa-square-instagram {
+  color: var(--instagram-color);
+  font-size: 3rem;
+  margin: 0 10px;
+}
+.container-pastiempo-cosas {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 30px 0;
+}
+.item-container-pasatiempo-cosas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.item-container-pasatiempo-cosas h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: clamp(1.3rem, 5vw, 1.5rem);
+  color: var(--light);
+}
+li {
+  color: var(--light);
+}
+.padding-50 {
+  padding: 0 50px;
+}
+.container-table {
+  width: 100%;
+}
+.collapsible {
+  background-color: var(--teal);
+  color: var(--light);
+  cursor: pointer;
+  padding: 12px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+.collapsible.active,
+.collapsible:hover {
+  background-color: var(--info);
+}
+
+.content-collapsible {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: var(--teal-opacity);
+  margin: 0;
+  padding: 0 10px;
+}
+
+.content-collapsible.show {
+  max-height: 600px;
+  padding: 40px;
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+table,
+th,
+td {
+  border: 1px solid var(--teal);
+  border-collapse: collapse;
+}
+table caption {
+  padding: 20px 0;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 5vw, 1.5rem);
+  color: var(--light);
+}
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  color: var(--light);
+}
+th {
+  background-color: var(--teal-opacity);
+}
+input {
+  font: inherit;
+}
+#asunto-span,
+#user-span,
+#email-span {
+  display: none;
+  color: var(--danger);
+}
+.form-contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 20px;
+  background-color: var(--teal-opacity);
+  margin-top: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.form-title {
+  font-size: 2rem;
+  padding: 20px 0;
+  color: var(--light);
+  text-align: center;
+}
+.form-label {
+  color: var(--light);
+  margin: 10px 0;
+}
+.form-inputs {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.form-input {
+  padding: 10px;
+}
+.form-submit {
+  width: 70%;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: var(--teal);
+  color: var(--light);
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+.form-submit:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+#msg-span {
+  display: none;
+  padding: 30px 0;
+  text-align: center;
+  color: var(--teal);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+@media (min-width: 1024px) {
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .content-bio{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .container-pastiempo-cosas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-contact {
+    width: 50%;
+    margin: 40px auto;
+  }
+}

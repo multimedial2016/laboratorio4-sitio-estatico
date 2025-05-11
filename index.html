@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Mi</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <main>
+    <div class="content-bio">
+      <h1>¡Hola! Mi nombre es Cristhian</h1>
+      <p>
+        Soy un desarrolador Unity. Tengo experiencia en tecnologías como C#,
+        motor de videojuegos Unity y modelado 3D. Principalmente desarrollo
+        aplicaciones de realidad virtual como simuladores de operaciones y
+        capacitaciones laborales. Tambien estoy desarrolando un juego para VR
+        que pronto sera lanzado. Me gusta aprender sobre nuevas tecnologías y
+        buscar como mejorar mi forma de trabajo.
+      </p>
+      <img class="img-perfil" src="img/perfil.jpg" alt="Logo" />
+      <div class="content-social">
+        <a class="link-social" target="_blank" href="https://www.youtube.com/@cristhianpayan"><i
+            class="fa-brands fa-youtube "></i></a>
+        <a class="link-social" target="_blank" href="https://www.instagram.com/cristhian.art3d/"><i
+            class="fa-brands fa-square-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="container-pastiempo-cosas">
+      <div class="item-container-pasatiempo-cosas collapsible-section">
+        <button class="collapsible">Pasatiempos</button>
+        <ul class="content-collapsible">
+          <li>Jugar videojuegos</li>
+          <li>Ver anime, series, peliculas</li>
+          <li>Hacer modelos 3D</li>
+          <li>Programar</li>
+        </ul>
+      </div>
+      <div class="item-container-pasatiempo-cosas collapsible-section">
+        <button class="collapsible">Cosas pendientes</button>
+        <ol class="content-collapsible">
+          <li>
+            Trabajo, reealizar pruebas de funcionamiento del proyecto de
+            videojuego
+          </li>
+          <li>Estudiar nuevas mecanicas para el juego</li>
+          <li>Terminar las tareas del bootcamp de programación</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="container-table">
+      <table>
+        <caption>
+          Cronograma de actividades
+        </caption>
+        <thead>
+          <tr>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Trabajo</td>
+            <td>Trabajo</td>
+            <td>Nuevas mecanicas para juego</td>
+            <td>Nuevas mecanicas para juego</td>
+            <td>Tareas bootcamp</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <form action="" class="form-contact" id="form">
+        <h2 class="form-title">Contacto</h2>
+        <span id="msg-span">Mensaje enviado, gracias por escribir.</span>
+        <div class="form-inputs">
+          <label class="form-label" for="userName">Nombre</label>
+          <input class="form-input" type="text" name="userName" id="userName" placeholder="Nombre"/>
+          <span id="user-span">Escribe un nombre</span>
+        </div>
+        <div class="form-inputs">
+          <label class="form-label" for="userSubject">Asunto</label>
+          <input class="form-input" type="text" name="userSubject" id="userSubject" placeholder="Asunto"/>
+          <span id="asunto-span">Escribe un asunto</span>
+        </div>
+        <div class="form-inputs">
+          <label class="form-label" for="userEmail">Correo</label>
+          <input class="form-input" type="email" name="userEmail" id="userEmail" placeholder="Correo"/>
+          <span id="email-span">Escribe un correo</span>
+        </div>
+        <input type="submit" value="Enviar" class="form-submit">
+    </form>
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/9db5429df9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
